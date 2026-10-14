@@ -1,68 +1,262 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="24dp"
-    android:gravity="center_horizontal">
+    android:background="#141414"
+    android:fitsSystemWindows="true"
+    android:padding="16dp">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Game Tebak Angka"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:layout_marginBottom="16dp" />
-
-    <TextView
-        android:id="@+id/txtSkor"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Skor: 100"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        android:textColor="#4CAF50"
-        android:layout_marginBottom="24dp" />
-
-    <TextView
-        android:id="@+id/txtPetunjuk"
+    <!-- ===== Panel Bermain ===== -->
+    <LinearLayout
+        android:id="@+id/panelMain"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Tebak angka antara 0 sampai 100!"
-        android:textSize="16sp"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_card"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Tebak angka"
+                android:textColor="#F2F2F2"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/btnRefresh"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Mulai ulang"
+                android:src="@drawable/ic_refresh" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:text="Skor"
+            android:textColor="#BBBBBB"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txtSkor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="100"
+            android:textColor="#F2F2F2"
+            android:textSize="64sp" />
+
+        <ProgressBar
+            android:id="@+id/progressSkor"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:layout_marginHorizontal="12dp"
+            android:layout_marginTop="8dp"
+            android:max="100"
+            android:progress="100"
+            android:progressDrawable="@drawable/progress_skor" />
+
+        <TextView
+            android:id="@+id/txtPetunjuk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/bg_rounded"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="Tebak angka antara 0 sampai 100!"
+            android:textColor="#CCCCCC"
+            android:textSize="17sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Pilih angka 0 sampai 100"
+            android:textColor="#CCCCCC"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/inputTebakan"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_input"
+            android:gravity="center"
+            android:hint="0 - 100"
+            android:inputType="number"
+            android:maxLength="3"
+            android:textColor="#F2F2F2"
+            android:textColorHint="#666666"
+            android:textSize="28sp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnTebak"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#2B7BD8"
+            android:text="Tebak"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:cornerRadius="12dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/txtRiwayatLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tebakan sebelumnya"
+            android:textColor="#CCCCCC"
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/containerRiwayat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" />
+        </HorizontalScrollView>
+    </LinearLayout>
+
+    <!-- ===== Panel Hasil ===== -->
+    <LinearLayout
+        android:id="@+id/panelHasil"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_card"
         android:gravity="center"
-        android:layout_marginBottom="16dp" />
+        android:orientation="vertical"
+        android:padding="28dp"
+        android:visibility="gone">
 
-    <EditText
-        android:id="@+id/inputTebakan"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Masukkan tebakanmu (0-100)"
-        android:inputType="number"
-        android:gravity="center"
-        android:textSize="18sp"
-        android:layout_marginBottom="16dp" />
+        <TextView
+            android:id="@+id/iconHasil"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/bg_circle"
+            android:gravity="center"
+            android:text="✓"
+            android:textColor="#22B33A"
+            android:textSize="44sp" />
 
-    <!-- Tombol Tebak (Bisa disembunyikan pakai View.GONE) -->
-    <Button
-        android:id="@+id/btnTebak"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="TEBAK SEKARANG"
-        android:backgroundTint="#2196F3"
-        android:textColor="#FFFFFF"
-        android:textStyle="bold"
-        android:layout_marginBottom="12dp" />
+        <TextView
+            android:id="@+id/txtJudulHasil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="Tebakanmu benar"
+            android:textColor="#F2F2F2"
+            android:textSize="24sp"
+            android:textStyle="bold" />
 
-    <!-- Tombol Reset / Main Lagi -->
-    <Button
-        android:id="@+id/btnReset"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="MULAI ULANG / RESET"
-        android:backgroundTint="#FF9800"
-        android:textColor="#FFFFFF"
-        android:textStyle="bold"
-        android:visibility="gone" />
+        <TextView
+            android:id="@+id/txtAngkaHasil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Angkanya adalah 0"
+            android:textColor="#CCCCCC"
+            android:textSize="17sp" />
 
-</LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_rounded"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Skor akhir"
+                    android:textColor="#BBBBBB"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/txtSkorAkhir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="#F2F2F2"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_rounded"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Percobaan"
+                    android:textColor="#BBBBBB"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/txtPercobaan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="#F2F2F2"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnReset"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#2B7BD8"
+            android:text="Main lagi"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:cornerRadius="12dp" />
+    </LinearLayout>
+</FrameLayout>
