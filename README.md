@@ -1,4 +1,4 @@
-# 🎯 Tebak Angka – Aplikasi Android
+# Tebak Angka – Aplikasi Android
 
 Aplikasi **Tebak Angka** adalah permainan sederhana berbasis Android yang menantang pengguna untuk menebak sebuah angka rahasia antara **0 sampai 100**. Setiap tebakan yang salah akan mengurangi skor, dan aplikasi akan memberikan petunjuk apakah tebakan terlalu kecil atau terlalu besar.
 
@@ -6,7 +6,7 @@ Aplikasi **Tebak Angka** adalah permainan sederhana berbasis Android yang menant
 
 > Proyek ini dibuat untuk memenuhi tugas **Ujian Tengah Semester (UTS)** mata kuliah **Mobile Programming**.
 
-## 👥 Pembuat
+## Pembuat
 
 | No | Nama | NIM | GitHub |
 |---|---|---|---|
@@ -21,7 +21,7 @@ Aplikasi **Tebak Angka** adalah permainan sederhana berbasis Android yang menant
 
 ---
 
-## 📱 Tampilan Aplikasi
+## Tampilan Aplikasi
 
 > Tambahkan screenshot di sini, misalnya:
 > `![Layar Bermain](screenshots/bermain.png)` dan `![Layar Hasil](screenshots/hasil.png)`
@@ -33,7 +33,7 @@ Aplikasi memiliki dua layar utama dengan tema gelap (*dark mode*):
 
 ---
 
-## ✨ Fitur
+##  Fitur
 
 - 🎲 Angka rahasia diacak otomatis (0–100) setiap permainan baru
 - 🏆 Sistem skor: mulai dari **100**, berkurang **10** setiap tebakan salah
@@ -47,7 +47,7 @@ Aplikasi memiliki dua layar utama dengan tema gelap (*dark mode*):
 
 ---
 
-## 🕹️ Cara Penggunaan
+## Cara Penggunaan
 
 1. Buka aplikasi **Tebak Angka**.
 2. Masukkan angka antara **0 sampai 100** pada kolom input.
@@ -62,7 +62,7 @@ Aplikasi memiliki dua layar utama dengan tema gelap (*dark mode*):
 
 ---
 
-## 🧠 Alur Logika Program
+##  Alur Logika Program
 
 ```mermaid
 flowchart TD
@@ -82,7 +82,7 @@ flowchart TD
 
 ---
 
-## 🛠️ Teknologi yang Digunakan
+##  Teknologi yang Digunakan
 
 | Komponen | Keterangan |
 |---|---|
@@ -96,7 +96,7 @@ flowchart TD
 
 ---
 
-## 📂 Struktur Proyek
+##  Struktur Proyek
 
 ```
 app/src/main/
@@ -111,7 +111,7 @@ app/src/main/
 
 ---
 
-## 🚀 Cara Menjalankan
+##  Cara Menjalankan
 
 1. Clone repository ini:
    ```bash
@@ -123,7 +123,7 @@ app/src/main/
 
 ---
 
-## 📝 Kesimpulan
+##  Kesimpulan
 
 Aplikasi Tebak Angka ini menerapkan konsep dasar pemrograman Android seperti penggunaan **Activity**, **View binding manual (`findViewById`)**, **event listener** pada tombol, **percabangan (`when`)**, **pembangkitan angka acak (`Random`)**, serta pengaturan **visibilitas view** untuk berpindah antar tampilan. Aplikasi ini juga dilengkapi tampilan modern bertema gelap agar nyaman digunakan.
 
