@@ -31,18 +31,20 @@ Aplikasi memiliki dua layar utama dengan tema gelap (*dark mode*):
 
 ---
 
-##  Struktur Proyek
+##  Teknologi yang Digunakan
 
-```
-app/src/main/
-├── java/com/example/menebakangkasimpananaplikasi/
-│   └── MainActivity.kt          # Logika permainan
-├── res/
-│   ├── layout/activity_main.xml # Tampilan utama
-│   ├── drawable/                # Background kartu, chip, progress bar, ikon
-│   └── values/                  # Tema, warna, string
-└── AndroidManifest.xml
-```
+| Komponen | Keterangan |
+|---|---|
+| Bahasa | Kotlin |
+| UI | XML Layout (LinearLayout, FrameLayout, MaterialButton) |
+| IDE | Android Studio |
+| Build Tool | Gradle (Kotlin DSL) |
+| Min SDK | 24 (Android 7.0) |
+| Target SDK | 37 |
+| Java Version | 11 |
+
+
+---
 
 ---
 
@@ -67,7 +69,21 @@ app/src/main/
 -  Validasi input (tidak boleh kosong dan harus di antara 0–100)
 -  Game over otomatis saat skor mencapai 0
 
+---
 
+##  Struktur Proyek
+
+```
+app/src/main/
+├── java/com/example/menebakangkasimpananaplikasi/
+│   └── MainActivity.kt          # Logika permainan
+├── res/
+│   ├── layout/activity_main.xml # Tampilan utama
+│   ├── drawable/                # Background kartu, chip, progress bar, ikon
+│   └── values/                  # Tema, warna, string
+└── AndroidManifest.xml
+
+```
 
 ## Cara Penggunaan
 
@@ -102,22 +118,6 @@ flowchart TD
     J --> K
 ```
 
----
-
-##  Teknologi yang Digunakan
-
-| Komponen | Keterangan |
-|---|---|
-| Bahasa | Kotlin |
-| UI | XML Layout (LinearLayout, FrameLayout, MaterialButton) |
-| IDE | Android Studio |
-| Build Tool | Gradle (Kotlin DSL) |
-| Min SDK | 24 (Android 7.0) |
-| Target SDK | 37 |
-| Java Version | 11 |
-
-
----
 
 ##  Kesimpulan
 
