@@ -15,7 +15,6 @@ Aplikasi **Tebak Angka** adalah permainan sederhana berbasis Android yang menant
 | Mata Kuliah | Pemrograman Perangkat Bergerak |
 | Jenis Tugas | Proyek UTS |
 
----
 
 ## Tampilan Aplikasi
 
@@ -27,9 +26,6 @@ Aplikasi memiliki dua layar utama dengan tema gelap (*dark mode*):
 1. **Layar Bermain** – menampilkan skor, progress bar skor, kotak petunjuk, kolom input angka, tombol **Tebak**, dan riwayat tebakan sebelumnya.
 2. **Layar Hasil** – muncul saat tebakan benar (ikon ✓ hijau) atau saat skor habis (ikon ✕ merah), berisi angka rahasia, skor akhir, jumlah percobaan, dan tombol **Main lagi**.
 
----
-
----
 
 ##  Teknologi yang Digunakan
 
@@ -43,10 +39,6 @@ Aplikasi memiliki dua layar utama dengan tema gelap (*dark mode*):
 | Target SDK | 37 |
 | Java Version | 11 |
 
-
----
-
----
 
 ##  Cara Menjalankan
 
@@ -69,11 +61,8 @@ Aplikasi memiliki dua layar utama dengan tema gelap (*dark mode*):
 -  Validasi input (tidak boleh kosong dan harus di antara 0–100)
 -  Game over otomatis saat skor mencapai 0
 
----
-
 ##  Struktur Proyek
 
-```
 app/src/main/
 ├── java/com/example/menebakangkasimpananaplikasi/
 │   └── MainActivity.kt          # Logika permainan
@@ -82,8 +71,6 @@ app/src/main/
 │   ├── drawable/                # Background kartu, chip, progress bar, ikon
 │   └── values/                  # Tema, warna, string
 └── AndroidManifest.xml
-
-```
 
 ## Cara Penggunaan
 
@@ -97,8 +84,6 @@ app/src/main/
 6. Jika tebakan benar, muncul layar **"Tebakanmu benar"** beserta skor akhir dan jumlah percobaan.
 7. Jika skor habis (0), muncul layar **"Game over! Skor habis"** dan angka rahasia ditampilkan.
 8. Tekan **Main lagi** untuk memulai permainan baru.
-
----
 
 ##  Alur Logika Program
 
