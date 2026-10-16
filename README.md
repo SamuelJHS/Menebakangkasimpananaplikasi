@@ -29,6 +29,32 @@ Aplikasi memiliki dua layar utama dengan tema gelap (*dark mode*):
 
 ---
 
+---
+
+##  Struktur Proyek
+
+```
+app/src/main/
+├── java/com/example/menebakangkasimpananaplikasi/
+│   └── MainActivity.kt          # Logika permainan
+├── res/
+│   ├── layout/activity_main.xml # Tampilan utama
+│   ├── drawable/                # Background kartu, chip, progress bar, ikon
+│   └── values/                  # Tema, warna, string
+└── AndroidManifest.xml
+```
+
+---
+
+##  Cara Menjalankan
+
+1. Clone repository ini:
+   ```bash
+   git clone https://github.com/SamuelJHS/Menebakangkasimpananaplikasi.git
+   ```
+2. Buka folder proyek di **Android Studio**.
+3. Tunggu proses *Gradle Sync* selesai.
+4. Jalankan di emulator atau perangkat Android dengan menekan tombol **Run **.
 ##  Fitur
 
 -  Angka rahasia diacak otomatis (0–100) setiap permainan baru
@@ -90,32 +116,6 @@ flowchart TD
 | Target SDK | 37 |
 | Java Version | 11 |
 
----
-
-##  Struktur Proyek
-
-```
-app/src/main/
-├── java/com/example/menebakangkasimpananaplikasi/
-│   └── MainActivity.kt          # Logika permainan
-├── res/
-│   ├── layout/activity_main.xml # Tampilan utama
-│   ├── drawable/                # Background kartu, chip, progress bar, ikon
-│   └── values/                  # Tema, warna, string
-└── AndroidManifest.xml
-```
-
----
-
-##  Cara Menjalankan
-
-1. Clone repository ini:
-   ```bash
-   git clone https://github.com/SamuelJHS/Menebakangkasimpananaplikasi.git
-   ```
-2. Buka folder proyek di **Android Studio**.
-3. Tunggu proses *Gradle Sync* selesai.
-4. Jalankan di emulator atau perangkat Android dengan menekan tombol **Run **.
 
 ---
 
