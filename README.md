@@ -16,7 +16,7 @@ Aplikasi **Tebak Angka** adalah permainan sederhana berbasis Android yang menant
 | Keterangan | Detail |
 |---|---|
 | Program Studi | Informatika |
-| Mata Kuliah | Mobile Programming |
+| Mata Kuliah | Pemrograman Perangkat Bergerak |
 | Jenis Tugas | Proyek UTS |
 
 ---
