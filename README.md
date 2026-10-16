@@ -35,17 +35,17 @@ Aplikasi memiliki dua layar utama dengan tema gelap (*dark mode*):
 
 ##  Fitur
 
-- 🎲 Angka rahasia diacak otomatis (0–100) setiap permainan baru
-- 🏆 Sistem skor: mulai dari **100**, berkurang **10** setiap tebakan salah
-- 📊 Progress bar yang menunjukkan sisa skor
-- 💡 Petunjuk **↑ Terlalu kecil** atau **↓ Terlalu besar**
-- 🕘 Riwayat tebakan sebelumnya beserta arah petunjuknya
-- 🔢 Penghitung jumlah percobaan
-- 🔄 Tombol refresh di pojok kanan atas untuk memulai ulang kapan saja
-- ⚠️ Validasi input (tidak boleh kosong dan harus di antara 0–100)
-- ❌ Game over otomatis saat skor mencapai 0
+-  Angka rahasia diacak otomatis (0–100) setiap permainan baru
+-  Sistem skor: mulai dari **100**, berkurang **10** setiap tebakan salah
+-  Progress bar yang menunjukkan sisa skor
+-  Petunjuk **↑ Terlalu kecil** atau **↓ Terlalu besar**
+-  Riwayat tebakan sebelumnya beserta arah petunjuknya
+-  Penghitung jumlah percobaan
+-  Tombol refresh di pojok kanan atas untuk memulai ulang kapan saja
+-  Validasi input (tidak boleh kosong dan harus di antara 0–100)
+-  Game over otomatis saat skor mencapai 0
 
----
+
 
 ## Cara Penggunaan
 
