@@ -125,7 +125,7 @@ app/src/main/
 
 ##  Kesimpulan
 
-Aplikasi Tebak Angka ini menerapkan konsep dasar pemrograman Android seperti penggunaan **Activity**, **View binding manual (`findViewById`)**, **event listener** pada tombol, **percabangan (`when`)**, **pembangkitan angka acak (`Random`)**, serta pengaturan **visibilitas view** untuk berpindah antar tampilan. Aplikasi ini juga dilengkapi tampilan modern bertema gelap agar nyaman digunakan.
+Aplikasi Tebak Angka ini menerapkan konsep dasar pemrograman Android seperti penggunaan **Activity**, **View binding manual (`findViewById`)**, **event listener** pada tombol, **percabangan**, **pembangkitan angka acak**, serta pengaturan **visibilitas view** untuk berpindah antar tampilan. Aplikasi ini juga dilengkapi tampilan modern bertema gelap agar nyaman digunakan.
 
 ---
 
