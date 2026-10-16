@@ -58,7 +58,7 @@ Aplikasi memiliki dua layar utama dengan tema gelap (*dark mode*):
 5. Setiap tebakan salah mengurangi skor sebanyak 10 poin.
 6. Jika tebakan benar, muncul layar **"Tebakanmu benar"** beserta skor akhir dan jumlah percobaan.
 7. Jika skor habis (0), muncul layar **"Game over! Skor habis"** dan angka rahasia ditampilkan.
-8. Tekan **Main lagi** (atau ikon 🔄) untuk memulai permainan baru.
+8. Tekan **Main lagi** untuk memulai permainan baru.
 
 ---
 
