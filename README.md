@@ -119,7 +119,7 @@ app/src/main/
    ```
 2. Buka folder proyek di **Android Studio**.
 3. Tunggu proses *Gradle Sync* selesai.
-4. Jalankan di emulator atau perangkat Android dengan menekan tombol **Run ▶**.
+4. Jalankan di emulator atau perangkat Android dengan menekan tombol **Run **.
 
 ---
 
