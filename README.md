@@ -19,7 +19,9 @@ Aplikasi **Tebak Angka** adalah permainan sederhana berbasis Android yang menant
 ## Tampilan Aplikasi
 
 > Tambahkan screenshot, misalnya:
-> `![Layar Bermain](screenshots/bermain.png)` dan `![Layar Hasil](screenshots/hasil.png)`
+> `<img width="738" height="1600" alt="WhatsApp Image 2026-10-22 at 12 08 33 PM" src="https://github.com/user-attachments/assets/4cb779c3-5962-4f5e-9b44-594a649f0acb" />
+` dan `![Layar Hasil]<img width="738" height="1600" alt="WhatsApp Image 2026-10-22 at 12 08 23 PM" src="https://github.com/user-attachments/assets/956cf0a3-d314-456a-b65d-ee6057596409" />
+`
 
 Aplikasi memiliki dua layar utama dengan tema gelap (*dark mode*):
 
